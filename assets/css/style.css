@@ -1,0 +1,539 @@
+/* 
+---------- Google Fonts ----------
+font-family: 'Nunito', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+/* Common Css Start  */
+:root {
+  --paceholder--text-color: #979797;
+  --form--bg-color: #262ba7;
+  --four--text-color: #262626;
+  --footer--bg-color: #3c3636;
+  --secondary--text-color: #cccccc;
+  --divider-color: rgba(255, 255, 255, 0.1);
+  --primary--btn-color: #575df8;
+  --seconday--btn-color: #4c2a0c;
+  --third--btn-color: #ffffff;
+  --third--text-color: #4d2a0c;
+  --primary--text-color: #3a3a3a;
+}
+.secondary--text-color {
+  color: var(--secondary--text-color);
+}
+.third--text-color {
+  color: var(--third--text-color);
+}
+.four--text-color {
+  color: var(--four--text-color);
+}
+.five--text-color {
+  color: #ffffff;
+}
+.primary--text-color {
+  color: var(--primary--text-color);
+}
+.third--text-color {
+  color: var(--third--text-color);
+}
+.btn--primary-color {
+  color: var(--primary--btn-color);
+}
+.btn--secondary-color {
+  color: var(--seconday--btn-color);
+}
+.btn--third-color {
+  color: var(--third--btn-color);
+}
+.row {
+  margin: 0;
+}
+body {
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 1.8rem;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+a {
+  outline: none;
+}
+
+img {
+  border: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Common Css End  */
+
+/* Header Start */
+.header__section {
+  padding-top: 40px;
+}
+.navbar {
+  z-index: 100;
+  padding: 0;
+}
+.header__container {
+  margin: 0 auto;
+}
+.header__container .navbar-brand {
+  padding-left: 15px;
+  margin: 0;
+}
+.header__container .nav {
+  font-family: "Nunito", sans-serif;
+  color: var(--primary--text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+/* .header__container .nav li {
+  padding: 35px 35px;
+} */
+.header__container .nav li:not(:first-child) {
+  margin-left: 47px;
+}
+.logo__img {
+  margin-left: 10px;
+}
+/* Header End */
+
+/* Design Css Start */
+.heading__content {
+  padding-top: 167px;
+  padding-left: 50px;
+}
+.heading__content a {
+  position: relative;
+}
+.heading__content .heading__title {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.heading__title::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 127px;
+  top: 10px;
+  left: -21px;
+  background: #575df8;
+  border-radius: 1px;
+}
+.primary__info {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.secondary__btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.secondary__btn::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/primary-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50px;
+  width: 51px;
+  top: -15px;
+  left: 0px;
+}
+/* Design Css End */
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Css Start */
+.customer-logos {
+  margin-top: 100px;
+}
+/* Logo Css End */
+
+/* Video Css Start */
+.video__section {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive .responsive-iframe {
+  padding: 0 100px;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.video__section {
+  margin-bottom: 150px;
+}
+.primary__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* .video__content {
+  width: 100%;
+  min-height: 50.25pc;
+} */
+/* Video Css End */
+
+/* Idea Css Start */
+.idea__section {
+  background: linear-gradient(180deg, #f8a257 0%, #ff8e2c 100%);
+}
+.idea__content {
+  padding: 94px 0 74px 50px;
+}
+.primary__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.idea__content a {
+  position: relative;
+}
+.primary__btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.primary__btn::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/secondary-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50px;
+  width: 51px;
+  top: -15px;
+  left: 0px;
+}
+.img__content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.icon__group__img::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/icon_group.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+/* Idea Css End */
+
+/* Product Css Start */
+.product__section {
+  background: linear-gradient(180deg, #575df8 0%, #444adf 100%);
+}
+.product__content a {
+  position: relative;
+}
+/* .product__img {
+  position: absolute;
+  bottom: -65px;
+} */
+/* Product Css End */
+
+/* Web Css Start */
+.card {
+  border: none;
+}
+.web__section {
+  margin-top: 267px;
+}
+.card-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.card-text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+.card-body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 32px 0 55px 24px;
+}
+.card-bg-one {
+  background-image: url(../img/web_design.png);
+}
+.card-bg-two {
+  background-image: url(../img/marketing.png);
+}
+.card-bg-three {
+  background-image: url(../img/video.png);
+}
+.card-bg-four {
+  background-image: url(../img/print.png);
+}
+.card-bg-five {
+  background-image: url(../img/Identity.png);
+}
+/* Web Css End */
+
+/* project Css Start */
+.flip-card-front {
+  padding: 25px;
+  text-align: left;
+  vertical-align: bottom;
+}
+.project__section {
+  margin-top: 160px;
+}
+.card__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+/* project Css End */
+
+/* --------- Flip Card Start ---------  */
+.flip-card {
+  background-color: transparent;
+  min-height: 530px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+  min-height: 530px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front-one {
+  background-image: url(../img/davos.png);
+}
+.flip-card-front-two {
+  background-image: url(../img/coffee.png);
+}
+.flip-card-front-three {
+  background-image: url(../img/Vorwerk.png);
+}
+.flip-card-front-four {
+  background-image: url(../img/chokolate.png);
+}
+.flip-card-front-five {
+  background-image: url(../img/digital.png);
+}
+
+/* Style the back side */
+.flip-card-back-one {
+  background-image: url(../img/hvr4.png);
+  transform: rotateY(180deg);
+  background-color: #4054b2;
+}
+.flip-card-back-two {
+  background-image: url(../img/franke_hover.png);
+  transform: rotateY(180deg);
+  background-color: #4054b2;
+}
+.flip-card-back-three {
+  background-image: url(../img/thermomix_hover.png);
+  transform: rotateY(180deg);
+  background-color: #4054b2;
+}
+.flip-card-back-four {
+  background-image: url(../img/outdoorchef-1.jpg);
+  transform: rotateY(180deg);
+  background-color: #4054b2;
+}
+.flip-card-back-five {
+  background-image: url(../img/adecco_hover.jpg);
+  transform: rotateY(180deg);
+  background-color: #4054b2;
+}
+/* --------- Flip Card End ---------  */
+
+/* Choose Css Start */
+.choose__section {
+  margin-top: 190px;
+}
+.choose__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+/* Choose Css End */
+
+/* Work Css Start */
+.work__section {
+  margin-top: 210px;
+  margin-bottom: 280px;
+}
+.w-20 {
+  max-width: 20%;
+}
+/* Work Css End */
+
+/* Form Css Start */
+.form__section {
+  position: relative;
+  background-color: var(--form--bg-color);
+  padding: 90px 98px;
+}
+.form__section::before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/design.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 300px;
+  height: 500px;
+  bottom: -20px;
+  left: -115px;
+}
+.form__section button {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+::placeholder {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--paceholder--text-color);
+}
+/* Form Css End */
+
+/* Footer Css Start  */
+.footer__section {
+  background-color: var(--footer--bg-color);
+  color: var(--secondary--text-color);
+}
+.secondary__container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.footer__heading__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.footer__content {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.footer__card ul li a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: var(--secondary--text-color);
+}
+.line {
+  border-top: 1px solid var(--divider-color);
+}
+.copywrite {
+  padding: 10px;
+}
+.copywrite p {
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: var(--secondary--text-color);
+}
+/* Footer Css End  */
