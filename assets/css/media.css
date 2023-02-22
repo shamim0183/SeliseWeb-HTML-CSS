@@ -36,7 +36,7 @@
   }
 }
 @media (min-width: 320px) and (max-width: 1275px) {
-  #design {
+  .design {
     display: none;
   }
   .logo__img {
@@ -112,7 +112,7 @@
     padding-top: 50px;
   }
 
-  #icon__group {
+  .icon__group_img {
     display: none;
   }
   .work__section {
