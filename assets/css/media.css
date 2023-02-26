@@ -1,6 +1,6 @@
 /* Media Query */
 
-@media (min-width: 1350px) {
+@media (max-width: 1350px) {
   .product__img {
     position: absolute;
     bottom: -65px;
@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 991px) and (max-width: 1200px) {
   .idea__content {
     padding: 94px 0 74px 50px;
   }
@@ -52,7 +52,10 @@
     padding-top: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 991px) {
+  .desktop__nav {
+    display: block;
+  }
 }
 @media (min-width: 767px) {
   .primary__title {
@@ -60,7 +63,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 991px) {
   .heading__content {
     padding-top: 50px;
   }
@@ -69,7 +72,13 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 992px) {
+@media (min-width: 320px) and (max-width: 991px) {
+  .third__btn {
+    font-size: 12px;
+  }
+  .mobile__nav {
+    display: block;
+  }
   .header__section {
     padding-bottom: 0px;
   }
@@ -101,7 +110,7 @@
     line-height: 1;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .form__section {
     padding: 90px 0 20px 0;
   }
@@ -121,10 +130,6 @@
   .choose__section {
     margin-top: 50px;
     padding: 0 15px;
-  }
-  .heading__title::before {
-    height: 81px;
-    top: 5px;
   }
   .heading__content .heading__title {
     font-size: 30px;

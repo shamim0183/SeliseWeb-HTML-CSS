@@ -4,58 +4,11 @@ font-family: 'Nunito', sans-serif;
 font-family: 'Ubuntu', sans-serif;
 */
 
-/* Common Css Start  */
-:root {
-  --paceholder--text-color: #979797;
-  --form--bg-color: #262ba7;
-  --four--text-color: #262626;
-  --footer--bg-color: #3c3636;
-  --secondary--text-color: #cccccc;
-  --divider-color: rgba(255, 255, 255, 0.1);
-  --primary--btn-color: #575df8;
-  --seconday--btn-color: #4c2a0c;
-  --third--btn-color: #ffffff;
-  --third--text-color: #4d2a0c;
-  --primary--text-color: #3a3a3a;
-}
-.secondary--text-color {
-  color: var(--secondary--text-color);
-}
-.third--text-color {
-  color: var(--third--text-color);
-}
-.four--text-color {
-  color: var(--four--text-color);
-}
-.five--text-color {
-  color: #ffffff;
-}
-.primary--text-color {
-  color: var(--primary--text-color);
-}
-.third--text-color {
-  color: var(--third--text-color);
-}
-.btn--primary-color {
-  color: var(--primary--btn-color);
-}
-.btn--secondary-color {
-  color: var(--seconday--btn-color);
-}
-.btn--third-color {
-  color: var(--third--btn-color);
-}
-.row {
-  margin: 0;
-}
-body {
-  position: relative;
-  box-sizing: border-box;
-  color: #000;
-  font-size: 1.8rem;
-  letter-spacing: -0.015em;
-  text-align: left;
-}
+/*************
+**************
+ Common Css Start  
+***************
+ *************/
 * {
   margin: 0;
   padding: 0;
@@ -94,11 +47,206 @@ address {
   margin-bottom: 0px;
 }
 
-/* Common Css End  */
+:root {
+  --black-text-color: #000000;
+  --paceholder--text-color: #979797;
+  --form--bg-color: #262ba7;
+  --four--text-color: #262626;
+  --footer--bg-color: #3c3636;
+  --secondary--text-color: #cccccc;
+  --divider-color: rgba(255, 255, 255, 0.1);
+  --primary--btn-color: #575df8;
+  --seconday--btn-color: #4c2a0c;
+  --third--btn-color: #ffffff;
+  --third--text-color: #4d2a0c;
+  --primary--text-color: #3a3a3a;
+}
+.black-text-color {
+  color: var(--black-text-color);
+}
+.header--top-background-color {
+  background-color: var(--form--bg-color);
+}
+
+.secondary--text-color {
+  color: var(--secondary--text-color);
+}
+.third--text-color {
+  color: var(--third--text-color);
+}
+.four--text-color {
+  color: var(--four--text-color);
+}
+.white-color {
+  color: #ffffff;
+}
+.primary--text-color {
+  color: var(--primary--text-color);
+}
+.third--text-color {
+  color: var(--third--text-color);
+}
+.btn--primary-color {
+  color: var(--primary--btn-color);
+}
+.btn--secondary-color {
+  color: var(--seconday--btn-color);
+}
+.btn--third-color {
+  color: var(--third--btn-color);
+}
+
+.third__btn {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: capitalize;
+}
+/* .third__btn::after {
+    background-size: 70%;
+    position: absolute;
+    content: "";
+    background-image: url(../img/primary-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 24px;
+    width: 24px;
+    top: -4px;
+    right: -27px;
+} */
+.row {
+  margin: 0;
+}
+body {
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 1.8rem;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+
+/* Custom Margin Padding Width Height Start */
+.pl-58 {
+  padding-left: 58px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-43 {
+  margin-bottom: 43px;
+}
+.w-200 {
+  max-width: 200px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-87 {
+  margin-bottom: 87px;
+}
+.w-932 {
+  max-width: 932px;
+}
+.pt-35 {
+  padding-top: 35px;
+}
+.p-35 {
+  padding: 35px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.pb-10 {
+  padding: 10px;
+}
+.w-407 {
+  max-width: 407px;
+}
+.w-325px {
+  width: 325px;
+}
+.w-205 {
+  width: 205px;
+}
+.w-317 {
+  width: 317px;
+}
+.w-253 {
+  width: 253px;
+}
+.h-95 {
+  min-height: 95px;
+}
+.h-80 {
+  max-height: 80px;
+}
+.h-280 {
+  max-height: 280px;
+}
+.h-130 {
+  max-height: 130px;
+}
+.w-283 {
+  width: 283px;
+}
+.w-377 {
+  width: 377px;
+}
+.w-220 {
+  width: 220px;
+}
+.w-253 {
+  width: 253px;
+}
+.h-88 {
+  min-height: 88px;
+}
+.p-20 {
+  padding: 20px;
+}
+.py-20 {
+  padding: 20px 0;
+}
+.ml-20 {
+  margin-left: 20px !important;
+}
+
+.primary--border-bottom-color {
+  border-bottom: 1px solid #b1b2b3;
+}
+
+@media (min-width: 992px) {
+  .pt-115 {
+    padding-top: 115px;
+  }
+  .pb-110 {
+    padding-bottom: 110px;
+  }
+}
+
+@media (min-width: 767px) {
+  .mb-50 {
+    margin-bottom: 50px;
+  }
+  .mb-83 {
+    margin-bottom: 83px;
+  }
+}
+
+/* Custom Margin Padding Width Height End */
+
+/*************
+**************
+ Common Css End  
+***************
+ *************/
 
 /* Header Start */
-.header__section {
-  padding-top: 40px;
+.header__top__conent {
+  padding: 15px 0;
 }
 .navbar {
   z-index: 100;
@@ -119,15 +267,256 @@ address {
   line-height: 28px;
   text-transform: uppercase;
 }
-/* .header__container .nav li {
-  padding: 35px 35px;
-} */
+/* Mega Menu Desktop */
+.desktop__nav {
+  display: none;
+}
+.thermomix__header__menu:hover .thermomix__menu {
+  visibility: visible;
+  opacity: 1;
+}
+.kobold__header__menu:hover .kobold__menu {
+  visibility: visible;
+  opacity: 1;
+}
+.erleben__header__menu:hover .erleben__menu {
+  visibility: visible;
+  opacity: 1;
+}
+/* Mega Menu Desktop */
+
+/* Mega Menu Start */
+.third__container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+/* Termomix Mega Menu Start */
+.thermomix__menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.mega__menu {
+  top: 153px;
+  width: 100%;
+  left: 0;
+}
+.thermomix__mega__menu::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 37%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent #979797 transparent;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+}
+.thermomix__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+}
+/* Termomix Mega Menu End */
+/* Kobold Mega Menu Start */
+.kobold__menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.kobold__mega__menu::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 47%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent #979797 transparent;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+}
+/* Kobold Mega Menu End */
+
+/* Erleben Mega Menu Start */
+.erleben__menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.desktop__bg__size {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 314px;
+}
+.erleben__img__one {
+  background-image: url(../img/Bimby_Portraits_Party-new.jpg);
+}
+.erleben__img__two {
+  background-image: url(../img/Rumdumsauber.jpg);
+}
+.erleben__img__three {
+  background-image: url(../img/Erlebniskochen.jpg);
+}
+.erleben__mega__menu::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 60%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent #979797 transparent;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+}
+/* Erleben Mega Menu End */
+
+/* Mega Menu Mobile Start */
+.thermomix__menu__hide {
+  width: 100%;
+  top: 40px;
+  position: absolute;
+  transform: translateX(137%);
+  z-index: 100;
+}
+.thermomix__menu__show {
+  transform: translateX(0%);
+}
+.icon__after::after {
+  background-size: 70%;
+  position: absolute;
+  content: "";
+  background-image: url(../img/secondary-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 24px;
+  width: 24px;
+  top: 0px;
+  right: 0px;
+}
+
+.mobile__bg__size {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center left;
+  width: 100px;
+  height: 100px;
+}
+.mobile__nav {
+  display: none;
+}
+.thermomix__mobile__menu:hover .thermomix__mobile {
+  display: block;
+}
+
+.kobold__mobile__menu:hover .kobold__mobile {
+  display: block;
+}
+.erleben__mobile__menu:hover .erben__mobile {
+  display: block;
+}
+/* Mega Menu Mobile End*/
 .header__container .nav li:not(:first-child) {
   margin-left: 47px;
 }
 .logo__img {
   margin-left: 10px;
 }
+
+/* Thermomix Mobile Menu Start */
+
+/* .thermomix__mobile{
+  visibility: hidden;
+  height: 0px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+} */
+
+.thermomix__mobile__img__one {
+  background-image: url(../img/thermomix-vorwerk-TM6.png);
+}
+.thermomix__mobile__img__two {
+  background-image: url(../img/Cookbooks-1.png);
+}
+.thermomix__mobile__img__three {
+  background-image: url(../img/img-digital-screens-bottom-new.png);
+}
+.thermomix__mobile__img__four {
+  background-image: url(../img/TMF.png);
+}
+.thermomix__mobile__img__five {
+  background-image: url(../img/Zubehör_new.png);
+}
+.thermomix__mobile__img__six {
+  background-image: url(../img/experience-tm6.png);
+}
+.thermomix__mobile__img__seven {
+  background-image: url(../img/advisors-tm6.png);
+}
+
+.thermomix__mobile {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+/* Thermomix Mobile Menu End */
+
+/* Kobold Mobile Menu Start */
+.kobold__mobile__img__one {
+  background-image: url(../img/Staubsauger_navigation_VK7.png);
+}
+.kobold__mobile__img__two {
+  background-image: url(../img/EB71.svg);
+}
+.kobold__mobile__img__three {
+  background-image: url(../img/HD71.svg);
+}
+.kobold__mobile__img__four {
+  background-image: url(../img/Cleaning_accessories.svg);
+}
+.kobold__mobile__img__five {
+  background-image: url(../img/SP71.svg);
+}
+.kobold__mobile__img__six {
+  background-image: url(../img/HD71.svg);
+}
+.kobold__mobile__img__seven {
+  background-image: url(../img/EB71.svg);
+}
+.kobold__mobile__img__eight {
+  background-image: url(../img/Erfahrung_image_V2.jpg);
+}
+.kobold__mobile {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+/* Kobold Mobile Menu End */
+
+/* Erben Mobile Menu Start */
+.erben__mobile {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+.erleben__mobile__img__one {
+  background-image: url(../img/Navigation_Veranstaltungen.jpg);
+}
+.erleben__mobile__img__two {
+  background-image: url(../img/Showrooms.jpg);
+}
+.erleben__mobile__img__three {
+  background-image: url(../img/Bimby_Portraits_Party-new.jpg);
+}
+.erleben__mobile__img__four {
+  background-image: url(../img/Rumdumsauber.jpg);
+}
+.erleben__mobile__img__five {
+  background-image: url(../img/Erlebniskochen.jpg);
+}
+/* erben Mobile Menu End */
+/* Mega Menu End */
 /* Header End */
 
 /* Design Css Start */
@@ -144,15 +533,14 @@ address {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  line-height: 48px;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 .heading__title::before {
   position: absolute;
   content: "";
   width: 8px;
-  height: 127px;
-  top: 10px;
+  height: 100%;
   left: -21px;
   background: #575df8;
   border-radius: 1px;
