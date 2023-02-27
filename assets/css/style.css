@@ -245,7 +245,7 @@ body {
  *************/
 
 /* Header Start */
-.menu__hover a:hover,
+.menu__hover > a:hover,
 .menu__hover:hover .caret {
   color: var(--form--bg-color);
 }
