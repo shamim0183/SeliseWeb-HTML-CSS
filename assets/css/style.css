@@ -405,16 +405,14 @@ body {
 /* Erleben Mega Menu End */
 
 /* Mega Menu Mobile Start */
-.thermomix__menu__hide {
+/* .thermomix__menu__hide {
   width: 100%;
   top: 40px;
   position: absolute;
   transform: translateX(137%);
   z-index: 100;
-}
-.thermomix__menu__show {
-  transform: translateX(0%);
-}
+} */
+
 .icon__after::after {
   background-size: 70%;
   position: absolute;
@@ -438,7 +436,7 @@ body {
 .mobile__nav {
   display: none;
 }
-.thermomix__mobile__menu:hover .thermomix__mobile {
+/* .thermomix__mobile__menu:hover .thermomix__mobile {
   display: block;
 }
 
@@ -447,7 +445,7 @@ body {
 }
 .erleben__mobile__menu:hover .erben__mobile {
   display: block;
-}
+} */
 /* Mega Menu Mobile End*/
 .header__container .nav li:not(:first-child) {
   margin-left: 47px;
@@ -487,10 +485,16 @@ body {
   background-image: url(../img/advisors-tm6.png);
 }
 
+.thermomix__menu__show {
+  opacity: 1 !important;
+  transform: translateX(0%);
+  visibility: visible !important;
+}
+
 .thermomix__mobile {
+  visibility: hidden;
   position: fixed;
-  overflow-y: scroll;
-  display: none;
+  opacity: 0;
   right: 0;
   bottom: 0;
   top: 118px;
@@ -498,10 +502,8 @@ body {
   width: 100%;
   /* height: auto; */
   z-index: 5000;
-  position: fixed;
   overflow-x: hidden;
   overflow-y: scroll;
-  /* background-color: #fff; */
   /* transform: translate(100%,0); */
   -ms-transform: translate(100%, 0);
   /* -webkit-transform: translate(100%,0); */
@@ -538,9 +540,9 @@ body {
   background-image: url(../img/Erfahrung_image_V2.jpg);
 }
 .kobold__mobile {
+  visibility: hidden;
   position: fixed;
-  overflow-y: scroll;
-  display: none;
+  opacity: 0;
   right: 0;
   bottom: 0;
   top: 118px;
@@ -551,7 +553,6 @@ body {
   position: fixed;
   overflow-x: hidden;
   overflow-y: scroll;
-  /* background-color: #fff; */
   /* transform: translate(100%,0); */
   -ms-transform: translate(100%, 0);
   /* -webkit-transform: translate(100%,0); */
@@ -564,9 +565,9 @@ body {
 
 /* Erben Mobile Menu Start */
 .erben__mobile {
+  visibility: hidden;
   position: fixed;
-  overflow-y: scroll;
-  display: none;
+  opacity: 0;
   right: 0;
   bottom: 0;
   top: 118px;
@@ -577,7 +578,6 @@ body {
   position: fixed;
   overflow-x: hidden;
   overflow-y: scroll;
-  /* background-color: #fff; */
   /* transform: translate(100%,0); */
   -ms-transform: translate(100%, 0);
   /* -webkit-transform: translate(100%,0); */
