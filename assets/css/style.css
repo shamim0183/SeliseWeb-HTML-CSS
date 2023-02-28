@@ -259,6 +259,21 @@ body {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+.header__section__wrapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 101;
+}
+.header__container.desktop__nav__wrapper {
+  margin-top: 65px;
+}
+.mobile__nav__wrapper {
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  background: #fff;
+}
 .header__top__conent {
   padding: 15px 0;
 }
@@ -473,8 +488,27 @@ body {
 }
 
 .thermomix__mobile {
+  position: fixed;
+  overflow-y: scroll;
   display: none;
-  transition: 0.5s ease-in-out;
+  right: 0;
+  bottom: 0;
+  top: 118px;
+  left: auto;
+  width: 100%;
+  /* height: auto; */
+  z-index: 5000;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* background-color: #fff; */
+  /* transform: translate(100%,0); */
+  -ms-transform: translate(100%, 0);
+  /* -webkit-transform: translate(100%,0); */
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
+  margin-bottom: -5px;
 }
 /* Thermomix Mobile Menu End */
 
@@ -504,15 +538,53 @@ body {
   background-image: url(../img/Erfahrung_image_V2.jpg);
 }
 .kobold__mobile {
+  position: fixed;
+  overflow-y: scroll;
   display: none;
-  transition: 0.5s ease-in-out;
+  right: 0;
+  bottom: 0;
+  top: 118px;
+  left: auto;
+  width: 100%;
+  /* height: auto; */
+  z-index: 5000;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* background-color: #fff; */
+  /* transform: translate(100%,0); */
+  -ms-transform: translate(100%, 0);
+  /* -webkit-transform: translate(100%,0); */
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
+  margin-bottom: -5px;
 }
 /* Kobold Mobile Menu End */
 
 /* Erben Mobile Menu Start */
 .erben__mobile {
+  position: fixed;
+  overflow-y: scroll;
   display: none;
-  transition: 0.5s ease-in-out;
+  right: 0;
+  bottom: 0;
+  top: 118px;
+  left: auto;
+  width: 100%;
+  /* height: auto; */
+  z-index: 5000;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* background-color: #fff; */
+  /* transform: translate(100%,0); */
+  -ms-transform: translate(100%, 0);
+  /* -webkit-transform: translate(100%,0); */
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
+  margin-bottom: -5px;
 }
 .erleben__mobile__img__one {
   background-image: url(../img/Navigation_Veranstaltungen.jpg);

@@ -64,6 +64,15 @@
 }
 
 @media (min-width: 767px) and (max-width: 991px) {
+  .thermomix__mobile {
+    top: 152px;
+  }
+  .kobold__mobile {
+    top: 152px;
+  }
+  .erben__mobile {
+    top: 152px;
+  }
   .heading__content {
     padding-top: 50px;
   }
@@ -73,6 +82,9 @@
 }
 
 @media (min-width: 320px) and (max-width: 991px) {
+  .design__section {
+    margin-top: 145px;
+  }
   .third__btn {
     font-size: 12px;
   }
