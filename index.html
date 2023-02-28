@@ -385,13 +385,13 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center mobile_nav__menu" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse justify-content-center mobile__nav" id="navbarSupportedContent">
                     <ul class="nav  flex-column ">
                         
-                        <li class="thermomix__mobile__menu  position-relative icon__after"  >
+                        <li class="thermomix__mobile__menu  position-relative icon__after" >
                             <a class="four--text-color"   href="#">service</a>
                             <!-- Mobile Thermomix Mega Menu Start -->
-                            <div class=" header--top-background-color thermomix__mobile ">
+                            <div class=" header--top-background-color thermomix__mobile thermomix__menu__hide">
                                 <div class="p-20 mt-3">
                                     
                                     <div class="mb-20" >
@@ -410,10 +410,7 @@
                                                         <p class="thermomix__title white-color">Thermomix TM6</p>
                                                     </div>
                                                     <div >
-                                                        <a class="white-color third__btn " href="#">Entdecken Sie alle
-                                                             <span class="ms-2">
-                                                                <i class="fa-solid fa-angle-right"></i>
-                                                            </span>
+                                                        <a class="white-color third__btn " href="#">Entdecken Sie alle <span class="ms-2"><i class="fa-solid fa-angle-right"></i></span>
                                                         </a>
                                                     </div>
                                                 </a>
@@ -509,7 +506,7 @@
                             <div class=" header--top-background-color erben__mobile  thermomix__menu__hide">
                                 <div class="p-20 mt-3">
                                     <div class="mb-20">
-                                        <h2 class="card__title white-color "><span class="me-2 arrow"><i class="fa-solid fa-angle-left"></i></span> Erleben</h2>
+                                        <h2 class="card__title white-color "><span class="me-2 arrow" ><i class="fa-solid fa-angle-left"></i></span> Erleben</h2>
                                     </div>
                                     <div >
                                         <div class="row">
@@ -591,7 +588,7 @@
                             </div>
                             <!-- Mobile Erleben Mega Menu End -->
                         </li>
-                        <li class="kobold__mobile__menu  position-relative icon__after" id="menu__three">
+                        <li class="kobold__mobile__menu  position-relative icon__after" >
                             <a class="four--text-color" href="#">projects</a>
                             <!-- Mobile Kobold Mega Menu Start -->
                             <div class=" header--top-background-color kobold__mobile  thermomix__menu__hide">
@@ -1266,32 +1263,30 @@
             });
         });
 
+
+        $(".mobile__nav ul.nav li").click(function () {
+                $(this).find('.thermomix__mobile').addClass('thermomix__menu__show ');
+            });
+        $(".mobile__nav ul.nav li").click(function () {
+                $(this).find('.kobold__mobile').addClass('thermomix__menu__show ');
+            });
+        $(".mobile__nav ul.nav li").click(function () {
+                $(this).find('.erben__mobile').addClass('thermomix__menu__show ');
+            });
         
-
-        $('.mobile_nav__menu ul.nav li').click(function () {
-                $(this).find('.thermomix__mobile').addClass('thermomix__menu__show');
-            });
-        $('.mobile_nav__menu ul.nav li').click(function () {
-                $(this).find('.kobold__mobile').addClass('thermomix__menu__show');
-            });
-        $('.mobile_nav__menu ul.nav li').click(function () {
-                $(this).find('.erben__mobile').addClass('thermomix__menu__show');
-            });
-
-        $(".arrow").click(function (e) {
+        
+        $('.arrow').click(function (e) {
                 $('.thermomix__mobile').removeClass('thermomix__menu__show');
                 e.stopPropagation();
-            });    
-        $(".arrow").click(function (e) {
+            }); 
+        $('.arrow').click(function (e) {
                 $('.erben__mobile').removeClass('thermomix__menu__show');
                 e.stopPropagation();
-            });    
-        $(".arrow").click(function (e) {
+            });
+        $('.arrow').click(function (e) {
                 $('.kobold__mobile').removeClass('thermomix__menu__show');
                 e.stopPropagation();
-            });    
-            
-        
+            });
         </script>
     </script>
     
